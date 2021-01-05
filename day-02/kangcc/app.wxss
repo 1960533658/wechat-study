@@ -1,0 +1,10 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  /* 设置主轴的方向为纵向 */
+  flex-direction: column;
+  /* 设置主轴内容为两端对齐 其余内容居于均分空白 */
+  justify-content: space-between;
+  box-sizing: border-box;
+} 

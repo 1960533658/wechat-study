@@ -1,0 +1,15 @@
+/**index.wxss**/
+.box {
+  width: 100px;
+  height: 200px;
+  background: skyblue;
+}
+.box-hover {
+  background-color: hotpink;
+}
+input {
+  border: 1px solid #ccc;
+}
+.input-placeholder {
+  color: skyblue;
+}

@@ -1,0 +1,47 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- text是小程序提供的基础组件 -->
+  <!-- 除了文本节点以外的其他节点都无法长按选中 -->
+  <text>你好</text>
+   
+  <!-- decode 是否解码 -->
+  <text decode="true">&nbsp; &lt;&gt; 等</text>
+
+  <!-- space 显示连续空格 -->
+  <text>但是健 康快乐撒  娇独立  接口</text>
+  <text space="ensp">但是健 康快乐撒  娇独立  接口</text>
+  <text space="emsp">但是健 康快乐撒  娇独立  接口</text>
+  <text space="nbsp">但是健 康快乐撒  娇独立  接口</text>
+
+  <!-- user-select控制文字是否可以被选中 没写默认就不能选中 写了就可以被选中 -->
+  <text user-select="true">圣诞节撒旦的撒</text>
+
+
+  <!-- view视图容器组件 相当于html中的div -->
+  <view class="box" hover-class="box-hover"></view>
+  <!-- hover-class 长按更换类名 -->
+  <!-- hover-stop-propagation 布尔值 指定是否组织本节点的祖先节点出现点击事件 -->
+  <!-- hover-start-time= 数字类型（ms） 按住多接触先点击状态，单位毫秒 -->
+  <!-- hover-stay-time= 数字类型（ms） 手指松开后点击状态停留的时间，单位毫秒 -->
+
+  <!-- 默认大小 type颜色-->
+  <button size="default" type="primary">按钮</button>
+  <!-- 小型  plain是否镂空-->
+  <button size="mini" type="default" plain="true">按钮</button>
+  <!-- disabled 禁用 -->
+  <button size="mini" type="warn" disabled="true">按钮</button>
+  
+  <!-- 
+    type 类型
+    password 布尔值 是否之密码
+    placeholder 占位符
+    placeholder-class 占位符样式
+   -->
+  <input type="number" password="true" placeholder="随便输入" placeholder-class="input-placeholder" />
+  
+   <!-- 
+     src --支持本地和网络的图片
+     mode -- 指定图片的建材、缩放的模式
+    -->
+  <image src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" mode="aspectFit"></image>
+</view>
