@@ -1,0 +1,72 @@
+.banner {
+  margin: 0 auto;
+  width: 702rpx;
+  background-color: skyblue;
+}
+/* 赚钱小祝福 start */
+.getmoney {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 178rpx;
+  padding: 0 28rpx 0 20rpx;
+  margin-bottom: 24rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+}
+/* 右侧盒子 */
+.users {
+  width: 100%;
+}
+.users image {
+  width: 92rpx;
+  height: 92rpx;
+  margin-right: 26rpx;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.users text {
+  font-size: 30rpx;
+  font-weight: 700;
+}
+/* 右侧盒子 */
+.newmoney {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding-right: 28rpx;
+}
+.newmoneynum {
+  padding-right: 26rpx;
+}
+.newmoney s{
+  font-size: 20rpx;
+  padding-right: 10rpx;
+  color: #333;
+}
+
+.newmoney span{
+  font-size: 30rpx;
+  color: #333;
+}
+.newmoney p{
+  display: block;
+  font-size: 20rpx;
+  color: #a3a3a3;
+}
+.newmoney .newmoney+div{
+  display: block;
+  font-size: 26rpx;
+  color: #ececec;
+}
+/* 赚钱小祝福 end */
+
+/* 客流情况 start */
+.mater {
+  display: flex;
+  justify-content: space-between;
+  height: 210rpx;
+  background-color: gold;
+}
+/* 客流情况 end */

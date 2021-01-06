@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+ <div class="banner">
+   <!-- 赚钱小祝福 start -->
+  <view class="getmoney">
+    <div class="users">
+      <image src="../../img/user-picture.png"></image>
+      <text>赚钱小祝福</text>
+    </div>
+    <div class="newmoney">
+      <div class="newmoneynum">
+        <s>￥</s><span>1200</span>
+        <p>可提现金额</p>
+      </div>
+      <div>></div>
+    </div>
+  </view>
+  <!-- 赚钱小祝福 start -->
+
+  <!-- 客流情况 start -->
+  <div class="mater">
+    
+  </div>
+  <!-- 客流情况 end -->
+ </div>
+</view>

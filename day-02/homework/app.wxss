@@ -1,0 +1,7 @@
+/**app.wxss**/
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #f7f7f7;
+  padding: 16rpx 24rpx 86rpx;
+} 
