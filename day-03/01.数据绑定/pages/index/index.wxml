@@ -1,0 +1,59 @@
+<!--index.wxml-->
+<view class="container">
+ <!-- 数据绑定 -->
+ <text>{{name+id+age}}</text>
+ <!-- 绑定属性 -->
+ <text data-id="{{id}}">{{id}}</text>
+
+
+ <!-- 移动端事件 -->
+ <!-- 
+   移动端事件(js提供) -- touch事件 手指点击事件
+                touchstart (触摸开始事件)  touchend(触摸结束事件) 
+                touchmove (触摸移动) 
+          收视实现
+            2.双击事件：dbtap
+            3.单击事件：click(单机) tap(单机)
+                
+  -->
+  <!-- bindtap 绑定触摸事件 -->
+  <button bindtap="handleTap">点我看看</button>
+  <!-- imput事件 -->
+  <input type="text" bindinput="handleInput" />
+  <text>{{str}}</text>
+  <!-- 事件传参 不能再绑定事件的同时传递参数 小程序会把bindtap后指定的值，统一当做事件名称来处理 -->
+  <!-- *错误方式* -->
+  <button bindtap="handlecs1(123)" type="primary">事件传参再绑定事件时传递参数</button>  
+  <button type="primary" bindtap="handlecs" data-num="123">正确的传参方式</button>
+  <wxs src="../../utils/main.wxs" module="main"></wxs>
+  <view>{{main.name}}</view>
+  <view>{{main.bar(1,2)}}</view>
+
+  <!-- 条件判断 -->
+  <!-- block不是组件，无论显示与否都不会解析在实际页面中只会显示内部元素内容 -->
+  <block wx:if="{{main.pan()==3}}">
+    <view>{{main.pan()}}</view>
+  </block>
+  <view wx:if="{{main.pan()=='3'}}">
+    <view>{{main.pan()}}</view>
+  </view>
+  <!-- 循环 -->
+  <block wx:for="{{main.str}}" wx:key="index">
+    <view>值：{{item}}--索引{{index}}</view>
+  </block>
+  <block wx:for="{{main.arr}}" wx:key="index">
+    <view>值：{{item}}--索引{{index}}</view>
+  </block>
+  <block wx:for="{{main.arr}}" wx:key="index">
+    <view>值：{{item}}--索引{{index}}</view>
+  </block>
+  <block wx:for="{{main.arr}}" wx:key="index">
+    <view>值：{{item}}--索引{{index}}</view>
+  </block>
+  <block wx:for="{{main.arr}}" wx:key="index">
+    <view>值：{{item}}--索引{{index}}</view>
+  </block>
+  <block wx:for="{{main.arr}}" wx:key="index">
+    <view>值：{{item}}--索引{{index}}</view>
+  </block>
+</view>

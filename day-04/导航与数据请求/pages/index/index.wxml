@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 跳转到非tapbar页面 -->
+  <navigator url="/pages/user/user?name='张三'&age=18">跳转到用户页面</navigator>
+  <!-- 导航到bar页面 -->
+  <navigator url="/pages/logs/logs" open-type="switchTab">跳转到导航中的日志页面</navigator>
+  <!-- 编程式导航 -->
+  <button type="primary" bindtap="handleViewUser">跳转到用户中心</button>
+  <button type="primary" bindtap="handleViewLogs">跳转到任务日志</button>
+
+  <!-- 发送请求 -->
+  <button type="primary" bindtap="handleReadMusic">听听音乐</button>
+  <audio src="{{src}}" name="{{name}}" author="{{author}}" id="MyAudio" poster="{{poster}}" controls loop></audio>
+  <com prop-age="{{kangage}}"></com>
+</view>

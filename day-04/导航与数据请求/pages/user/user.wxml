@@ -1,0 +1,7 @@
+<!--pages/user/user.wxml-->
+<view>
+  <rich-text>
+    <h1>用户页面</h1>
+    <button type="primary" bindtap="handleViewBack">Back-1</button>
+  </rich-text>
+</view>

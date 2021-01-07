@@ -1,0 +1,2 @@
+<!--pages/components/com/com.wxml-->
+<view>这是com组件——{{name}}{{propAge.age}}</view>

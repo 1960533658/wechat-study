@@ -1,0 +1,16 @@
+var name = "张三";
+var bar = function (a,c) {
+  return a+c
+};
+function pan() {
+  return 3
+}
+var arr = ["我","是","你","爹1"]
+var str = "我是你爹2"
+module.exports = {
+  name: name,
+  bar: bar,
+  pan: pan,
+  arr: arr,
+  str: str
+}
