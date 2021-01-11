@@ -1,0 +1,139 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 顶部导航 -->
+  <view class="navigation">专题</view>
+  <view class="main">
+    <!-- 轮播图 -->
+    <div class="carousel">
+      <swiper indicator-dots="true" indicator-color="rgba(244,244,244,0.6)" indicator-active-color="#FFFFFF"
+        autoplay="true" current="0" interval="1500">
+        <swiper-item>
+          <image src="../img/special/carousel.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+          <image src="../img/special/carousel.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+          <image src="../img/special/carousel.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+          <image src="../img/special/carousel.jpg"></image>
+        </swiper-item>
+      </swiper>
+    </div>
+    <view class="fication">
+      <text>日期</text>
+      <text>专题</text>
+    </view>
+    <!-- 商品 -->
+    <view class="goods">
+      <view class="box1">
+        <!-- 左侧商品 -->
+        <view class="left" bindtap="handleTo" style="height: 360rpx">
+          <image src="../img/look/76@2x.png"></image>
+          <view class="text">
+            <text class="make">如何制作一碗方便面 ？</text>
+            <text class="monry">19.9元</text>
+            <text class="up">起</text>
+            <view class="about">
+              <image src="../img/special/xin_5@2x.png" class="fl" style="height: 20rpx;"></image>
+              <text class="fl">1220</text>
+              <image src="../img/special/chakan@2x.png" class="fl"></image>
+              <text class="fl">1000</text>
+              <image src="../img/special/life@2x.png"></image>
+            </view>
+          </view>
+        </view>
+
+        <!-- 左侧商品 -->
+        <view class="left" bindtap="handleTo">
+          <image src="../img/look/76@2x.png"></image>
+          <view class="text">
+            <text class="make">如何制作一碗方便面 ？</text>
+            <text class="monry">19.9元</text>
+            <text class="up">起</text>
+            <view class="about">
+              <image src="../img/special/xin_5@2x.png" class="fl"></image>
+              <text class="fl">1220</text>
+              <image src="../img/special/chakan@2x.png" class="fl"></image>
+              <text class="fl">1000</text>
+              <image src="../img/special/life@2x.png"></image>
+            </view>
+          </view>
+        </view>
+
+        <!-- 左侧商品 -->
+      <view class="left" bindtap="handleTo">
+        <image src="../img/look/76@2x.png"></image>
+        <view class="text">
+          <text class="make">如何制作一碗方便面 ？</text>
+          <text class="monry">19.9元</text>
+          <text class="up">起</text>
+          <view class="about">
+            <image src="../img/special/xin_5@2x.png" class="fl"></image>
+            <text class="fl">1220</text>
+            <image src="../img/special/chakan@2x.png" class="fl"></image>
+            <text class="fl">1000</text>
+            <image src="../img/special/life@2x.png"></image>
+          </view>
+        </view>
+      </view>
+      </view>
+      
+      <view class="box2">
+        <!-- 右侧商品 -->
+        <view class="right" bindtap="handleTo">
+          <image src="../img/look/76@2x.png"></image>
+          <view class="text">
+            <text class="make">如何制作一碗方便面 ？</text>
+            <text class="monry">19.9元</text>
+            <text class="up">起</text>
+            <view class="about clearfix">
+              <image src="../img/special/xin_5@2x.png" class="fl"></image>
+              <text class="fl">1220</text>
+              <image src="../img/special/chakan@2x.png" class="fl"></image>
+              <text class="fl">1000</text>
+              <image src="../img/special/life@2x.png"></image>
+            </view>
+          </view>
+        </view>
+
+        <!-- 右侧商品 -->
+        <view class="right" bindtap="handleTo">
+          <image src="../img/look/76@2x.png"></image>
+          <view class="text">
+            <text class="make">如何制作一碗方便面 ？</text>
+            <text class="monry">19.9元</text>
+            <text class="up">起</text>
+            <view class="about clearfix">
+              <image src="../img/special/xin_5@2x.png" class="fl"></image>
+              <text class="fl">1220</text>
+              <image src="../img/special/chakan@2x.png" class="fl"></image>
+              <text class="fl">1000</text>
+              <image src="../img/special/life@2x.png"></image>
+            </view>
+          </view>
+        </view>
+
+        <!-- 右侧商品 -->
+        <view class="right" bindtap="handleTo">
+          <image src="../img/look/76@2x.png"></image>
+          <view class="text">
+            <text class="make">如何制作一碗方便面 ？</text>
+            <text class="monry">19.9元</text>
+            <text class="up">起</text>
+            <view class="about clearfix">
+              <image src="../img/special/xin_5@2x.png" class="fl"></image>
+              <text class="fl">1220</text>
+              <image src="../img/special/chakan@2x.png" class="fl"></image>
+              <text class="fl">1000</text>
+              <image src="../img/special/life@2x.png"></image>
+            </view>
+          </view>
+        </view>
+      </view>
+
+
+    </view>
+  </view>
+</view>
