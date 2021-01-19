@@ -1,0 +1,30 @@
+<!--pages/cate/cate.wxml-->
+<view class="top">
+  <text>黑马优购</text>
+  <view class="search">
+    <input type="text" style="background: #fff" bindinput="handleFocu" />
+    <view class="search-content" wx:if="{{searchState}}">
+      <image src="../../static/img/search.png" class="fl"></image>
+      <text class="fl">搜索</text>
+    </view>
+  </view>
+</view>
+<view class="cate-list">
+  <scroll-view class="cate-list-left" scroll-y="true">
+    <view 
+    wx:for="{{cateList}}"
+    wx:key="cat_id" 
+    bindtap="handleShowPartData" 
+    data-partData="{{item.cat_id}}">
+      {{item.cat_name}}
+    </view>
+  </scroll-view>
+  <scroll-view class="cate-list-right" scroll-y="true">
+    <view class="cate-list-right-item" wx:for="{{cateShowList.children}}" wx:key="index">
+      <text>/ {{item.cat_name}} /</text>
+      <view class="right-itemshow"> 
+        <image wx:for="{{item.children}}" wx:key="index" src="{{item.cat_icon}}"></image>
+      </view>
+    </view>
+  </scroll-view>
+</view>

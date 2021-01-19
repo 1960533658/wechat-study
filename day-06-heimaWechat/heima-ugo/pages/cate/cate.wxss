@@ -1,0 +1,34 @@
+/* pages/cate/cate.wxss */
+.cate-list {
+  display: flex;
+  height: 100%;
+  margin-top: 228rpx;
+}
+.cate-list-left {
+  height: calc(100vh - 228rpx);
+  width: 200rpx;
+  background-color: #f7f7f7;
+}
+.cate-list-left view {
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+.cate-list-right {
+  width: calc(100vw - 200rpx);
+  height: calc(100vh - 228rpx);
+}
+.right-itemshow {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cate-list-right-item text {
+  display: block;
+  text-align: center;
+  font-size: 24rpx;
+  font-weight: 700;
+}
+.right-itemshow image {
+  width: 180rpx;
+  height: 152rpx;
+}

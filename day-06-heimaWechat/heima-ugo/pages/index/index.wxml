@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="top">
+  <text>黑马优购</text>
+  <view class="search">
+    <input type="text" style="background: #fff" bindinput="handleFocu" />
+    <view class="search-content" wx:if="{{searchState}}">
+      <image src="../../static/img/search.png" class="fl"></image>
+      <text class="fl">搜索</text>
+    </view>
+  </view>
+</view>
+<view class="banner">
+  <swiper indicator-dots="true" indicator-color="rgba(244,244,244,0.6)" indicator-active-color="#000"
+        autoplay="true" current="0" interval="1500">
+    <swiper-item wx:for="{{swiperData}}" wx:key="index">
+      <image src="{{item.image_src}}"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="cate">
+  <view wx:for="{{catitems}}" wx:key="index">
+    <image src="{{item.image_src}}"></image>
+  </view>
+</view>
+<view class="floor">
+  <view class="floor-title" wx:for="{{floordata}}" wx:key="index">
+    <image src="{{item.floor_title.image_src}}"></image>
+    <view class="floor-content" >
+      <image wx:for="{{item.product_list}}" wx:key="index" src="{{item.image_src}}"></image>
+    </view>
+  </view>
+  
+</view>
